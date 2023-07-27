@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth-page</title>
+    <link rel="stylesheet" href="script.js">
+    
+</head>
+
+<style>
+    body{
+        background-image: url("realgame.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+        /* -webkit-transform: scaleX(-1);
+         transform: scaleX(-1); */
+    }
+    .secondcontainer{
+        height:600px;
+        width:400px;
+        background: #101010;
+        box-shadow: 10px 13px 20px;
+        position: absolute;
+        top:30px;
+        right: 1020px;
+        border-radius: 10%; 
+        overflow: hidden;  
+        margin-top: 3%;
+    }
+    .secondcontainer::before{
+      content:'';
+      position: absolute;
+      height:100%;
+      width:100%;
+      background: linear-gradient(red,blue);
+      animation:animate 1s 1s linear infinite;
+      border-radius: 10%;
+    }
+    @keyframes animate{
+      0%{transform: rotate(0deg);}
+      100%{transform: rotate(360deg);}
+    } 
+
+    .secondcontainer::after{
+      content:'';
+      position:absolute;
+      height:585px;
+      width:385px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      border-radius: 10%;
+      top:9px;
+      left:8px;
+      right:10px;
+      bottom:8px;
+       background: #101010;
+       
+       
+    }
+
+    #paragraph{
+      color:aqua;
+      text-shadow: 2px 2px 4px;
+      position: relative;
+      text-align: center;
+      font-size: 17px; 
+      height: 100px;
+      z-index: 1;
+      top:20px;
+      display:flex;
+      justify-content: center;
+    }
+    #btn2{
+      position: relative;
+      top:300px;
+      font-size: 23px;
+      height: 40px;
+      left:110px;
+      background: linear-gradient(black,rgb(26, 117, 209));
+      border-radius: 20px;
+      box-shadow: 3px 3px 10px;
+      z-index: 1;
+      color:white;
+    }
+
+    #submit{
+      color:white;
+      position: relative;
+      text-shadow: 3px 3px 10px orange ;
+      top:62%;
+      box-shadow: 3px 3px 10px white;
+      font-size: 18px;
+      background:linear-gradient(black,rgb(26, 117, 209));
+      border-radius: 30px;
+      width:200px;
+      right:19%;
+      height: 56px;
+      z-index: 1; 
+      padding-top: 5px;
+    }
+
+    #para2{
+      color:aqua;
+      position: relative;
+      z-index: 1;
+      left:3%;
+      bottom:10%;
+
+    }
+    /* ----------------------------------------------------------- */
+
+    @media (min-width:360px)and (max-width:1022px){
+     
+     
+      body{
+        background-image: url("mb.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
+      .secondcontainer{
+        
+        margin-right: 50%;
+        height: 603px;
+        width:320px;
+        position:absolute;
+         left:4%;
+         top:7px;
+         margin-bottom: 60%;
+      }
+      .secondcontainer::after{
+        position: absolute;
+        right: 20%;
+        margin-bottom: 28%;
+        /* border: 2px solid white; */
+        height:584px;
+        width:304px;
+        
+      }
+
+      #btn2{
+        position: absolute;
+        top:68%;
+        left:25%;
+        height: 54px;
+        width:50%;
+      }
+      #submit{
+        position: absolute;
+        left:8%;
+        margin-top: 130px;
+        margin-left: 30px;
+        height:40px;
+      }
+      #paragraph{
+        margin-right: 20px;
+        padding-left: 4px;
+      }
+       
+    }
+
+   @media (min-width:414px)and (max-width:896px){
+   
+      body{
+          background-image: url("mb.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      .secondcontainer{
+          margin-left: 8%;
+          margin-top: 30%;
+         }
+   }
+   
+   @media (min-width:390px)and (max-width:844px){
+      
+    body{
+          background-image: url("mb.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+   
+        
+
+        .secondcontainer{
+          margin-left: 8%;
+          margin-top: 30%;
+         }
+   }
+
+   @media(min-width:375px)and (max-width:667px){
+    body{
+          background-image: url("mb.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+   
+        
+
+        .secondcontainer{
+          margin-left: 3%;
+         }
+   }
+
+   @media (min-width:540px)and (max-width:720px){
+         .secondcontainer{
+          margin-left: 20%;
+          position: absolute;
+          bottom: 10%;
+         }
+   }
+
+   
+   
+   
+   
+
+    
+  
+</style>
+
+<body>
+
+  <div class="secondcontainer" id="divcontainer">
+    <p id="paragraph">
+      
+    </p>
+    <button type="submit" id="btn2"><b>Click For Task</b></button>
+    <button type="submit" id="submit"><b>Click This To Answer</b></button>
+    <p id="para2"></p>
+  </div>
+
+  <script>
+
+
+    const list=["What's the last lie you told?","What was the most embarrassing thing you've ever done on a date?","Have you ever accidentally hit something (or someone!) with your car?",
+
+" Name someone you've pretended to like but actually couldn't stand.","5. What's your most bizarre nickname?",
+
+" What's been your most physically painful experience?",
+
+" What bridges are you glad that you burned?",
+
+" What's the craziest thing you've done on public transportation?",
+
+" If you met a genie, what would your three wishes be?"," What's the meanest thing you've ever said about someone else?",
+
+" What's something you love to do with your friends that you'd never do in front of your partner?",
+
+" Who are you most jealous of?",
+
+"What do your favorite pajamas look like?",
+
+"Have you ever faked sick to get out of a party?",
+"Where are you ticklish?",
+
+" Do you believe in any superstitions? If so, which ones?",
+
+"What's one movie you're embarrassed to admit you enjoy?",
+
+" What's your most embarrassing grooming habit?",
+
+" When's the last time you apologized? What for?",
+
+" How do you really feel about the Twilight saga?"]
+
+
+      
+
+
+      const button= document.getElementById("btn2")
+        
+       button.addEventListener("click",function(){
+        button.disabled=true;
+         const para=document.getElementById("paragraph")
+         const random= Math.floor(Math.random() * list.length)
+           const results=list[random]
+           para.innerHTML=results;
+
+       
+
+          })   
+
+           const submit= document.getElementById("submit")
+              submit.addEventListener("click",function(){
+                const input= window.prompt("answer the question under 10 words")
+
+                 if(input.length<10){
+                  alert("your answer should atleast contain 10 words")
+                 }else if(input!==null){
+                  window.location.href="nextpage3.html"
+                 }    
+              })
+  </script>
+   
+
+   <!-- 600 height and 400 width getElementById("paragraph")-->
+</body>
+</html>
+

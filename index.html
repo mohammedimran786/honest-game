@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>truth-and-dare</title>
+    <link rel="stylesheet" href="rock.css">
+    <link rel="stylesheet" href="script.js">
+    <!-- <link rel="website icon" alt="icon" href="thruth.jpg"> -->
+</head>
+
+<body>
+     
+   
+    <div class="container">
+      <h1 id="title" class="title">Welcome to the Truth and Dare Game</h1>
+      
+        <img src="thruth.jpg" alt="truthpik" id="true">
+          <p>
+            OR
+          </p>
+       <img src="dare.jpg" alt="darepik" id="dare">
+
+       
+    </div>
+ 
+       
+    <script>
+
+
+       
+// ---------------------------
+      const target=document.getElementById("true")
+ target.addEventListener("click",function(){
+     window.location.href="nextpage.html";
+
+     
+ })
+
+ const target1=document.getElementById("dare")
+ target1.addEventListener("click",function(){
+     window.location.href="differentpage.html";
+
+     
+ })
+
+    </script>
+   
+</body>
+</html>

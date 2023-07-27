@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dare-page</title>
+</head>
+<style>
+  body{
+      background-image: url("realgame.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* -webkit-transform: scaleX(-1);
+       transform: scaleX(-1); */
+  }
+  .secondcontainer1{
+      height:600px;
+      width:400px;
+      background: #101010;
+      box-shadow: 10px 13px 20px;
+      position: absolute;
+      top:30px;
+      right: 120px;
+      border-radius: 10%; 
+      overflow: hidden;  
+      margin-top: 3%;
+  }
+  .secondcontainer1::before{
+    content:'';
+    position: absolute;
+    height:100%;
+    width:100%;
+    background: linear-gradient(red,blue);
+    animation:animate 1s 1s linear infinite;
+  }
+  @keyframes animate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+  } 
+
+  .secondcontainer1::after{
+    content:'';
+    position:absolute;
+    height:585px;
+    width:385px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10%;
+    top:9px;
+    left:8px;
+    right:10px;
+    bottom:8px;
+     background: #101010;
+     
+     
+  }
+
+  #paragraph1{
+    color:aqua;
+    text-shadow: 2px 2px 4px;
+    position: relative;
+    text-align: center;
+    font-size: 17px; 
+    height: 100px;
+    z-index: 1;
+    top:20px;
+  }
+  #btn3{
+    position: relative;
+    top:300px;
+    font-size: 23px;
+    height: 40px;
+    left:110px;
+    background: linear-gradient(black,rgb(26, 117, 209));
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px;
+    z-index: 1;
+    color:white;
+  }
+
+  #submit1{
+    color:white;
+    position: relative;
+    text-shadow: 3px 3px 10px orange;
+    top:62%;
+    box-shadow: 3px 3px 10px white;
+    font-size: 18px;
+    background:linear-gradient(black,rgb(26, 117, 209));
+    border-radius: 30px;
+    width:200px;
+    right:19%;
+    height: 56px;
+    z-index: 1; 
+    padding-top: 5px;
+  }
+
+  #para3{
+    color:aqua;
+    position: relative;
+    z-index: 1;
+    left:3%;
+    bottom:10%;
+
+  }
+
+  /* media query for different phones
+   */
+  
+   /* @media(min-width:360px)and (max-width:640px){
+
+       .secondcontainer{
+        height: 560px;
+        width:295px;
+        position: relative;
+        left:6%;
+        bottom: 10%;
+       }
+
+       body{
+        background-image: url("mb.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+
+       .secondcontainer::before{
+        border-radius: 10%;
+       }
+
+       .secondcontainer::after{
+        height:540px;
+        width:280px;
+        margin-right: 6%;
+       }
+       
+       #btn2{
+        position: absolute;
+        top:72%;
+        left:25%;
+        height: 54px;
+        width:50%;
+      }
+      #submit{
+        position: absolute;
+        left:5%;
+        margin-top: 130px;
+        margin-left: 30px;
+        height:40px;
+      }
+      
+
+   }
+  
+   @media (min-width:390px)and (max-width:844px){
+     .secondcontainer{
+      margin-left: 5%;
+      margin-top: 20%;
+     }
+   } */
+   /* ----------------------------------- */
+
+   @media (min-width:360px)and (max-width:1022px){
+     
+     
+     body{
+       background-image: url("mb.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+
+     .secondcontainer1{
+       margin-right: 50%;
+       height: 603px;
+       width:330px;
+       position:absolute;
+        left:4%;
+        top:7px;
+        margin-bottom: 60%;
+     }
+     .secondcontainer1::after{
+       position: absolute;
+       right: 18%;
+       margin-bottom: 28%;
+       /* border: 2px solid white; */
+        margin-right: 2%;
+       height:584px;
+       width:315px;
+       
+     }
+
+     #btn3{
+       position: absolute;
+       top:68%;
+       left:25%;
+       height: 54px;
+       width:50%;
+     }
+     #submit1{
+       position: absolute;
+       left:8%;
+       margin-top: 130px;
+       margin-left: 40px;
+       height:40px;
+     }
+     #paragraph1{
+       margin-right: 15px;
+       padding-left: 10px;
+       font-size: 15px;
+     }
+      
+   }
+
+  @media (min-width:414px)and (max-width:896px){
+  
+     body{
+         background-image: url("mb.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     .secondcontainer1{
+         margin-left: 8%;
+         margin-top: 30%;
+        }
+  }
+  
+  @media (min-width:390px)and (max-width:844px){
+     
+   body{
+         background-image: url("mb.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+  
+       
+
+       .secondcontainer1{
+         margin-left: 8%;
+         margin-top: 30%;
+        }
+  }
+
+  @media(min-width:375px)and (max-width:667px){
+   body{
+         background-image: url("mb.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+  
+       
+
+       .secondcontainer1{
+         margin-left: 3%;
+        }
+  }
+
+  @media (min-width:540px)and (max-width:720px){
+        .secondcontainer1{
+         margin-left: 20%;
+         position: absolute;
+         bottom: 10%;
+        }
+  }
+
+
+</style>
+
+<body>
+
+<div class="secondcontainer1" id="divcontainer">
+  <p id="paragraph1">
+    
+  </p>
+  <button type="submit" id="btn3"><b>Click For Task</b></button>
+  <button type="submit" id="submit1"><b>Click When Done</b></button>
+  <p id="para3"></p>
+</div>
+
+<script>
+
+
+  const list=["Act like a chicken and cluck for one minute in a public place.",
+"Call a random number and sing Happy Birthday to the person who answers.",
+"Put on a blindfold and try to walk in a straight line for 30 seconds.",
+"Let someone else style your hair however they want.",
+"Go outside and yell, I love (insert your favorite vegetable)! at the top of your lungs.",
+"Wear your clothes inside out for the next hour.",
+"Dance like nobody's watching for one minute in a crowded area.",
+"Do your best impression of a famous celebrity for everyone to guess.",
+"Text a friend using only emojis for the next five minutes.",
+"Wear socks on your hands for the next two rounds.",
+"Go to a neighbor's house and ask if you can borrow a cup of sugar (even if you don't need it).",
+"Attempt to lick your elbow for 30 seconds.",
+"Walk backward everywhere you go for the next three minutes.",
+"Speak in a British accent for the next ten minutes.",
+"Text your crush a pickup line of your choice.",
+"Put on lipstick without using a mirror.",
+"Do five cartwheels in a row (if space permits).",
+"Create a silly dance and perform it for everyone.",
+"Ask a stranger for a hug (make sure they are comfortable with it).",
+"Wear a funny costume or hat for the next hour.",
+"Do your best impression of a famous cartoon character.",
+"Put a piece of ice down your back and keep it there for 30 seconds.",
+"Take a selfie making your silliest face and post it on social media.",
+"Offer to do a random act of kindness for someone nearby, like holding the door or carrying their bags.",
+"Sing the alphabet backward without any mistakes.",
+"Pretend to be a news reporter and give a live report on something mundane.",
+"Speak only in whispers for the next 15 minutes.",
+"Walk up to a stranger and compliment them on something unusual (like their shoes or hairstyle).",
+"Wear a sign that says, Free Hugs for 10 minutes and see how many hugs you can get.",
+"Do the chicken dance in public or in front of friends.",
+"Perform a dramatic reading of a random paragraph from a book.",
+"Put a piece of lemon in your mouth and try not to make a sour face.",
+"Stand up and do 20 jumping jacks right now.",
+"Act out your favorite movie scene without using any words.",
+"Put on a blindfold and try to identify three different objects by touch alone.",
+"Try to lick your nose using your tongue (if physically possible).",
+"Draw a picture blindfolded and show it to everyone.",
+"Call a pizza place and order a completely made-up pizza topping combination.",
+"Do your best impression of a crying baby for 30 seconds.",
+"Balance a spoon on your nose for as long as you can.",
+"Put on an accent of your choice and maintain it for the next 20 minutes.",
+"Go outside and sing a song at the top of your lungs.",
+"Make up a short rap about the last thing you ate.",
+"Find an empty soda bottle and spin it for a dare selection game.",
+"Wear your shoes on the wrong feet for the next round.",
+"Act like a robot for the next five minutes.",
+"Try to juggle three random objects (if available).",
+"Find a funny joke and share it with everyone.",
+"Do your best impression of a monkey for 30 seconds.",
+"Spin around in a circle ten times and try to walk straight afterward"]
+
+
+    
+
+
+    const button1= document.getElementById("btn3")
+      
+     button1.addEventListener("click",function(){
+      button1.disabled=true;
+       const para1=document.getElementById("paragraph1")
+       const random1= Math.floor(Math.random() * list.length)
+         const results1=list[random1]
+         para1.innerHTML=results1;
+
+     
+
+        })   
+
+         const submit1= document.getElementById("submit1")
+            submit1.addEventListener("click",function(){
+                 const type1= prompt("if you have done this task type done")
+                  if(type1=="done"||type1=="Done"){
+                window.location.href="nextpage4.html"
+                  }  
+            })
+</script>
+ 
+
+ <!-- 600 height and 400 width getElementById("paragraph")-->
+</body>
+</html>
